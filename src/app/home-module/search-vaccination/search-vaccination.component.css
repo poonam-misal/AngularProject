@@ -1,0 +1,18 @@
+.anchor{
+    text-decoration: none;
+}
+.container1{
+text-align: center;
+}
+
+.button{
+    border: none;
+    font-size: 20px;
+    margin-left: 200px;
+}
+.selection{
+    border-radius: 15px;
+    width: 200px;
+    height: 40px;
+    
+}

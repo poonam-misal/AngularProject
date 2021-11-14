@@ -1,0 +1,33 @@
+.form{
+    border: 1px solid;
+    width: 500px;
+    border-radius: 20px;
+    box-shadow: 5px 10px;
+    /* text-align: center;  */
+}
+h6,.oring{
+    text-align: center;
+}
+.img{
+    margin-left: 150px;
+}
+.input{
+    margin-left: 150px;
+}
+.input1{
+    margin-left: 300px;
+}
+.button{
+    margin-left: 100px;
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+}
+.button1{
+    margin-left: 100px;
+    width: 300px;
+    height: 40px;
+    border-radius: 6px;
+    background-color: blue;
+    color: white;
+}

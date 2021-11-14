@@ -1,0 +1,62 @@
+<section>
+    <div class="container container1">
+        <div class="row">
+            <h1><b>Search Your Nearest Vaccination Center</b></h1>
+            <h5>Get a preview list of the nearest centers and check availability of vaccination slots</h5>
+            <a class="text-blue anchor" href=""><b>Login to book your slot</b> </a>
+            <br><br>
+
+
+            
+        </div>
+    </div>
+</section>
+
+
+<section>
+
+    <div class="row">
+        <div class="col-3"></div>
+        <div class="col-6">
+            
+                <p-tabView>
+         
+            <p-tabPanel header="By District">
+
+        <form>      
+            <select class="selection" (change)="onStateSelect($event)" name="STATE" [(ngModel)]="selectedState">
+                <option  *ngFor="let st of UserState" [ngValue]="st.state_id">{{st.state_name}}</option>
+            </select>
+        
+            <select class="selection">
+                <option *ngFor="let dt of userDistrict" >{{dt.district_name}}</option>
+            </select>
+        </form>
+        </p-tabPanel>
+   
+
+        <p-tabPanel header="By Pin">
+        
+            <form>
+                <input type="text" class="selection" placeholder="search your pin">
+        
+                <button type="button" class="btn btn-primary selection">Search</button>
+        
+            </form>
+            </p-tabPanel>
+       
+    </p-tabView>
+
+
+
+
+       
+            
+    </div>
+
+
+
+
+    <div class="col-3"></div>
+    </div>
+    </section>

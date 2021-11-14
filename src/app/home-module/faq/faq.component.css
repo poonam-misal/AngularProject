@@ -1,0 +1,26 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+} */
+
+h1{
+    text-align: center;
+}
+
+
+.button{
+    font-size: 20px;
+    color: gray;
+    
+}
+
+.button:hover{
+    color: blue;
+}
+.div{
+    margin-left: 200px;
+}
+.container1{
+    width: 800px;
+   
+}

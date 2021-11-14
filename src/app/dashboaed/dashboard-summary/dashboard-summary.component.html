@@ -1,0 +1,99 @@
+<div class="overflow-hidden">
+
+<section>
+    <!-- <div class="container"> -->
+        <div class="row">
+            <div class="col-2 mt-4 box1">
+                <p>Registrations Today</p>
+            </div>
+
+            <div class="col-2 mt-4 box2">
+                <p>Vaccinations Today</p>
+            </div>
+
+            <div class="col-2 mt-4 box3">
+                <p>Partially Vaccinated Today</p>
+            </div>
+
+            <div class="col-2 mt-4 box4">
+                <p>Fully Vaccinated Today</p>
+            </div>
+        </div>
+    <!-- </div> -->
+</section>
+
+<section>
+    <!-- <div class="container"> -->
+     
+          
+              <img class="img mt-4" src="../../../assets/images/home_india.svg" style="width: 40px; height: 40px;">
+              <p>India</p>
+
+           
+
+          
+                <form class="select">
+                    <select class="select1">
+                        <option value="" disabled selected>Select your state</option>
+                        <option *ngFor="let st of state">{{st}}</option>
+                    </select>&nbsp;
+
+                    <select class="select1">
+                        <option value="" disabled selected>Select your district</option>
+                        <option *ngFor="let dt of District">{{dt}}</option>
+                    </select>
+
+                </form>
+           
+       
+    <!-- </div> -->
+</section>
+
+
+
+<section>
+    <!-- <div class="container"> -->
+        <form>
+            <select class="excle mt-4">
+                <option value="" disabled selected>Export</option>
+
+                <option *ngFor="let ex of exael">{{ex}}</option>
+            </select>
+        </form>
+    <!-- </div> -->
+</section>
+
+<section>
+    <!-- <div class="container"> -->
+        <div class="row mt-4">
+            <div class="col-3 box5">
+                <img class="img1" src="">
+                <h6>Total Vaccination Doses <br>
+                    1,09,12,58,667</h6><br>
+                    <p class="mx-5">Dose1 <br>74,37,79,467</p>
+                    <p>Dose2 <br>34,74,79,200</p>
+            </div>
+
+
+            <div class="col-3 box6">
+                <img class="img1" src="../../../assets/images/building.png" style="width: 40px; height:40px">
+                <h6>Sites Conducting Vaccination <br>69,681</h6>
+                <p class="mx-5">Government<br>67,787</p>
+                <p>Private<br>1,894</p>
+            </div>
+
+
+            <div class="col-3 box7">
+                <img class="img1" src="../../../assets/images/group.png" style="height: 40px; width: 40px;">
+                <h6>Total Registrations <br>80,54,82,235</h6><br>
+                <p class="mx-5">Age 18-44<br>49,07,71,847</p>
+                <p>Age 45+<br>31,47,10,388</p>
+
+            </div>
+        </div>
+    <!-- </div>   -->
+</section>
+
+<app-summary></app-summary>
+
+</div>

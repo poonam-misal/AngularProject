@@ -1,0 +1,41 @@
+<section>
+    <div class="container">
+        <form class="form mt-5" *ngIf="genration">
+            <img class="img"src="../../../assets/images/login-screen.svg">
+            <h4>Register or Sign In for Vaccination</h4>
+            <p>An OTP will be sent to your mobile number for verification</p>
+
+            <span class="p-float-label input">
+                <input id="float-input" type="tel" pInputText name="userMobile"[(ngModel)]="mobNo"> 
+                <label for="float-input" >Enter Your Monile Number</label>
+            </span><br>
+            
+
+            <button class="button" (click)="generateOtp()">Get OTP</button><br><br>
+
+
+            
+            <p>By Sign In/Registration, I agree to the<a href="">Terms of Service</a>and<a href="">Privacy Policy</a></p>
+        </form>
+    </div>
+</section>
+
+
+<section>
+    <div class="container">
+        <form class="form mt-5" *ngIf="confoimation">
+            <img class="img"src="../../../assets/images/login-screen.svg">
+            <h4>OTP Verification</h4>
+            
+
+            <span class="p-float-label input">
+                <input id="float-input" type="text" pInputText name="userMobile"[(ngModel)]="otp"> 
+                <label for="float-input" >Enter OTP</label>
+            </span><br>
+            
+
+            <button class="button" (click)="conformOtp()">Confirm OTP</button><br><br>
+            <p>By Sign In/Registration, I agree to the<a href="">Terms of Service</a>and<a href="">Privacy Policy</a></p>
+        </form>
+    </div>
+</section>
